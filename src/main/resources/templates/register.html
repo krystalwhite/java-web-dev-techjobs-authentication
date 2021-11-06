@@ -5,10 +5,14 @@
 
 <header th:replace="fragments :: page-header"></header>
 
+<br>
+<br>
+<br>
+<br>
 <form method="post">
     <div class="form-group">
         <label>Username
-            <input class="form-control" th:field="${registerFormDTO.username}" />
+            <input class="form-control" th:field="${registerFormDTO.username}" type="text"/>
         </label>
         <p class="error" th:errors="${registerFormDTO.username}"></p>
     </div>
